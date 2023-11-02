@@ -1,0 +1,437 @@
+/*
+Name: Alex Jennings
+Date: 09/19/2023
+File Name: style.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, div, img, article, section {
+		margin: 0;
+		padding: 0;
+		border: 0;
+}
+
+body {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  min-height: 100vh;
+	  margin: 0;
+	  background-color: #17202A;
+}
+
+/* Style rules for the header content */
+header {
+		font-size: 2.5em;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: bold;
+		color: #F4D03F;
+		margin: 0 0 1em;
+		text-align: center;
+}
+
+header h1 {
+		display: inline-block;
+		font-size: 2.5em;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: bold;
+		color: #F4D03F;
+		text-align: center;
+}
+
+header h2 {
+		display: block;
+		font-size: 0.75em;
+		font-family: 'Fjalla One', sans-serif;
+		color: #A2D9CE;
+		margin: 0 0 2em;
+		text-align: center;
+}
+
+/* Wrapper for h1 and h2 to make them sticky */
+.header-text-wrapper {
+	  position: -webkit-sticky;
+	  position: sticky;
+	  top: 0;
+	  background-color: #17202A;
+	  z-index: 100;
+	  color: #F4D03F;
+}
+
+img {
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
+		display: block;
+		border-radius: 8px;
+}
+
+/* Style rules for viewport */
+
+/* Style rules for the nav content */
+
+nav {
+	  width: 70%;
+	  margin: 3em auto 0; 
+}
+
+nav ul {
+	  list-style-type: none;
+	  padding: 0; 
+	  text-align: center;
+}
+
+nav li {
+	  font-size: 1.5em;
+	  font-family: 'Fjalla One', sans-serif;
+	  font-weight: bold;
+}
+
+nav li:first-child {
+		border-top: none;
+}
+
+nav li a {
+	  display: block;
+	  color: #85C1E9;
+	  padding: 0.5em 1em;
+	  text-decoration: none;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+		display: block;
+}
+
+.tablet-desktop {
+		display: none;
+}	
+
+/* Style rules for the main content */
+main {
+		clear: left;
+		background-color: #B99459;
+		padding: 2%;
+		font-size: 1.25em;
+		font-family: 'Quicksand', sans-serif;
+		margin-left: auto;
+}
+
+.tel-link {
+		background-color: #85C1E9;
+		padding: 2%;
+		margin: 0 auto;
+		width: 80%;
+		text-align: center;
+		border-radius: 5px;
+}
+
+.action {
+		font-size: 1.35em;
+		color: #85C1E9;
+		font-weight: bold;
+}
+
+.map {
+		border: 2px solid #000;
+		width: 95%;
+		height: 50%;
+}
+
+#variables {
+		background-color: #B99459;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+}
+
+#variables h1 {
+		background-color: #B99459;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		text-align: center;
+		font-weight: bold;
+		font-family: 'Fjalla One', sans-serif;
+		margin: 0 0 0.5em;
+}
+
+#variables dt {
+		background-color: #B99459;
+		margin: .75em 0 0.5em;
+		padding: 0;
+		border: 0;
+}
+
+/* Style rules for form elements */
+
+#form h2 {
+	margin: 50px auto;
+	text-align: center;
+}
+
+fieldset, input, select {
+	margin-bottom: 2%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+label {
+		display: block;
+		padding-top: 3%;
+}
+
+/* Style rules for the footer content */
+
+footer p {
+		font-size: 0.85em;
+		text-align: center;
+		color: #fff;
+		padding: 0 1em;
+		font-family: 'Quicksand', sans-serif;
+}
+
+footer p a {
+		color: #fff;
+		text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+		
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	.tablet-desktop {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+	/* Tablet Viewport: Style rule for header */
+	.header-text-wrapper {
+		position: static;
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+	
+	nav {
+		width: auto;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+		text-align: center;
+	}
+	
+	nav li {
+		border-top: none;
+		display: inline-block;
+	}
+	
+	nav li:last-child {
+		margin-right: 0;
+	}
+	
+	/* Tablet Viewport: Style rules for main content area */
+	main{
+		background: linear-gradient(#F4D03F, #A2D9CE);
+		background-color: #17202A;
+		margin: 0;
+	}
+	
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 20px;
+	}
+	
+	.grid-item2 {
+		grid-column: 1 / span 2;
+	}
+	
+	#variables{
+		background: linear-gradient(#F4D03F, #A2D9CE);
+		background-color: #17202A;
+		margin: 0;
+	}
+
+	#variables h1,
+	main h1 {
+		background: linear-gradient(#F4D03F, #A2D9CE);
+		color: black;
+		-webkit-background-clip: text;
+		background-clip: text;
+		padding: 10px;
+		border-radius: 5px;
+	}
+	
+	#variables dt {
+		background: linear-gradient(#F4D03F, #A2D9CE);
+		color: black;
+		-webkit-background-clip: text;
+		background-clip: text;
+		margin: .75em 0 0.5em;
+		padding: 0;
+		border: 0;
+	}
+
+	.tel-num {
+		font-size: 1.25em;
+	}
+	
+	.map {
+		width: 600px;
+		height: 450px;
+	}
+	
+/* Tablet Viewport: Style Rules for Table */
+	table {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	caption {
+		font-weight: bold;
+		font-size: 1.5em;
+		padding: 1%;
+	}
+	
+	th, td {
+		border: 1px solid #000;
+		padding: 1%;
+		text-align: center;
+	}
+	
+	th {
+		background-color: #000;
+		color: #fff;
+		font-size: 1.15em;
+	}
+	
+	tr:nth-child(odd) {
+		background-color: #ffd700;
+	}
+	
+	tr:nth-child(even) {
+		background-color: #85C1E9;
+	}
+	
+/* Tablet Viewport: Style rule for form elements */
+	form {
+		width: 70%;
+		margin: 0 auto;
+	}
+		
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+	nav li {
+		font-size: 2em;
+	}
+	
+	nav li a:hover {
+		background-color: #85C1E9;
+		color: #17202A;
+	}
+	
+	article h1 {
+		font-size: 2em;
+		text-align: center;
+		font-weight: bolder;
+	}
+	
+	.pic-text {
+		font-size: 1.5em;
+		padding: 20px;
+	}
+
+	figure {
+		text-align: center;
+	}
+	
+	figcaption {
+		font-style: italic;
+		font-size: 1.5em;
+		color: #555;
+	}
+	
+	#equipment {
+		display: flex;
+		flex-direction: column;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	
+	#equipment h1, #equipment p, #equipment ul {
+		width: 100%;
+	}
+	
+	#equipment ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+	}
+	
+	#equipment li {
+		width: 20%;
+	}
+	
+	.frame {
+		opacity: 0.9;
+	}
+	
+	.frame:hover {
+		opacity: 1;
+		box-shadow: 8px 8px 10px #808080;
+	}
+	
+	/* Desktop Viewport: Style rules for form elements */
+	form {
+		width: auto;
+	}
+	
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	
+	.btn {
+		grid-column: 1 / span 3;
+	}
+	
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+	
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+	}
+	
+}
+
+/* Media Query for Print */
+@media print {
+	
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+	
+}
+}
