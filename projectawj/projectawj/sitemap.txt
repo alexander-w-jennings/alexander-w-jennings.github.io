@@ -1,0 +1,6 @@
+http://www.exampledomain.com/index.html
+http://www.exampledomain.com/about.html
+http://www.exampledomain.com/coffee-101.html
+http://www.exampledomain.com/resources.html
+http://www.exampledomain.com/contact.html
+http://www.exampledomain.com/template.html
